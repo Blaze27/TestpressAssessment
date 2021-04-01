@@ -11,13 +11,20 @@
     <title>Testpress Assessment</title>
 </head>
 <body>
+<div class="text-center">
+<h2>Testpress Assessment</h2>
+<h3>Poll App</h3>
+</div>
 {% if latest_question_list %}
-    <ul>
+    
+    <div class="row">
     {% for question in latest_question_list %}
-        {% comment %} <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li> {% endcomment %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    <div class="block">
+        <h4>Polls</h4>
+        <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+    </div>
     {% endfor %}
-    </ul>
+    </div>
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
