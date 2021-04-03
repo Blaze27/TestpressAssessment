@@ -27,7 +27,7 @@ SECRET_KEY = 'mysq+5u@$5zd6obw&$@+ib^3)1pw$v&n36@c(gai8(wfmtqd4!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['testpress-assessment.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['testpress-assessment.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
