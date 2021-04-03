@@ -1,2 +1,1 @@
-Release: python manage.py migrate
-web: gunicorn TestpressAssessment.wsgi
+web: gunicorn TestpressAssessment.wsgi --log-file -
